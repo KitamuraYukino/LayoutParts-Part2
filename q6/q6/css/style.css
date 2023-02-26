@@ -1,1 +1,49 @@
 @charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  background-color: #338bff;
+  justify-content: center;
+}
+
+.nav-container {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin: 30px 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.main-nav {
+  display: flex;
+  color: #fff;
+}
+
+.main-nav a {
+  color: #fff;
+}
+
+.header-logo a {
+  color: #f2ff7b;
+}
+
+.main-nav li {
+  margin: 30px;
+}
+
+.main-nav:first-child {
+  margin-left: none;
+}
