@@ -1,4 +1,232 @@
 @charset "UTF-8";
 
+html {
+  font-size: 100%;
+}
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+/* q9-1~q9-3 */
+.bace-green {
+  height: 200px;
+  width: 200px;
+  background-color: #76ff826b;
+}
+
+/* q9-1 */
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.fadein{
+  animation-name: fadein;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+/* q9-2 */
+@keyframes fadeout{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.fadeout{
+  animation-name: fadeout;
+  animation-delay: 4s;
+  animation-duration: 4s;
+}
+
+/* q9-3 */
+@keyframes rotation{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.rotation{
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+}
+
+/* q9-4 */
+.q9-4-blue{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+}
+
+.q9-4-blue:hover{
+  background-color: #ff27e2c9;
+  transition: .5s;
+}
+
+/* q9-5 */
+.q9-5-blue{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  transition: .5s;
+  transform: rotate(0deg);
+}
+
+.q9-5-blue:hover{
+  transform: rotate(360deg);
+  transition: .5s;
+}
+
+/* q9-6 */
+.q9-6-blue{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  transition: .5s;
+}
+
+.q9-6-blue:hover{
+  transform: translateY(-20%);
+}
+
+/* q9-7 */
+.q9-7-blue{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  transition: .5s;
+}
+
+.q9-7-blue:hover{
+  transform: translateX(20%);
+}
+
+/* q9-8 */
+.q9-8-blue{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  transition: .5s;
+}
+
+.q9-8-blue:hover{
+  height: 300px;
+}
+
+/* q9-9 */
+.q9-9-blue{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  transition: .5s;
+}
+
+.q9-9-blue:hover{
+  transform: scaleX(2.5);
+}
+
+/* q9-10 */
+.q9-10-blue{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  transition: .5s;
+}
+
+.q9-10-blue:hover{
+  border: 10px #00ffe5 solid;
+  box-sizing: border-box;
+}
+
+/* q9-11 */
+.q9-11-blue{
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  transition: .5s;
+}
+
+.q9-11-blue:hover{
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+/* q9-12 */
+@keyframes circle{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.circle{
+  width: 50px;
+  height: 50px;
+  border: 10px #ecf1f2 solid;
+  border-top: 10px #14ff4bcd solid;
+  border-radius: 100%;
+  animation-name: circle;
+  animation-iteration-count: infinite;
+  animation-duration: 1.1s;
+  animation-timing-function: linear;
+}
+
+/* q9-13 */
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.card{
+  width: 300px;
+  border: 1px solid #000;
+  border-left: 0;
+  padding: 20px;
+}
+
+li.card:first-child{
+  border-left: 1px solid #000;
+}
+
+.background{
+  height: 150px;
+  width: 150px;
+  background-image: url(https://picsum.photos/id/1005/200/300);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.list{
+  padding-top: 20px;
+}
+
+.card:hover{
+  box-shadow: 0 0 10px 3px #424242d0;
+  transition: .5s;
+}
