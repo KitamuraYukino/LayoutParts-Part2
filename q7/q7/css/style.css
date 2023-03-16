@@ -20,10 +20,9 @@ html {
   content: "";
   position: absolute;
   right: 0;
-  left: 0;
+  left: 30px;
   width: 0;
   height: 0;
-  margin-left: 30px;
 }
 
 .balloon:before {
@@ -35,7 +34,7 @@ html {
 
 .balloon:after {
   bottom: -14px;
-  left: 5px;
+  left: 35px;
   border-style: solid;
   border-color: #fad296 transparent;
   border-width: 15px 15px 0 15px;
